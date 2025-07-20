@@ -713,7 +713,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                                     return chrome.bookmarks.create({
                                         parentId: folderId,
                                         title: request.shortcutName,
-                                        url: existingBookmark.url 
+                                        url: tab.url 
                                     });
                                 });
                         })
