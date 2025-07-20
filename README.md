@@ -118,7 +118,7 @@ Extension not showing?
 
 ### Chrome
 
-For Chrome installations, `git pull` the cloned plugin directory, head to `chrome://extensions`, and click on the reload icon next to the plugin.
+For Chrome installations, `git pull` the cloned plugin directory or install the zip and replace the files, head to `chrome://extensions`, and click on the reload icon next to the plugin.
 
 ### Edge, other browsers
 
