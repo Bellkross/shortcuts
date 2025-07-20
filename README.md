@@ -68,7 +68,6 @@
 ### Shortcut Example
 
 ![shortcut](readme_pictures/shortcut.png)
-![shortcut page](readme_pictures/shortcutpage.png)
 
 Create shortcuts for your most-visited websites:
 
@@ -79,7 +78,6 @@ Create shortcuts for your most-visited websites:
 ### Search Engine Example
 
 ![search engine example 1](readme_pictures/searchengineexample1.png)
-![search engine example 2](readme_pictures/searchengineexample2.png)
 
 Create shortcuts for your most-visited search engines:
 
