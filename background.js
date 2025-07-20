@@ -684,20 +684,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
                     console.log(`Shortcut received and link is as follows: ${tab.url}`);
 
-                    // Transform Humio URLs to simplified format
-                    let bookmarkUrl = tab.url;
-                    if (
-                        tab.url.includes("humio.prod.bloomberg.com") &&
-                        request.shortcutName.endsWith(".logs")
-                    ) {
-                        // Find everything up to and including logConfigName, then append &start=5m
-                        const logConfigMatch = tab.url.match(/(.*%23logConfigName%3D[^%&]+)/);
-                        if (logConfigMatch) {
-                            bookmarkUrl = logConfigMatch[1] + "&start=5m";
-                        }
-                        // If pattern doesn't match, bookmarkUrl stays as original tab.url
-                    }
-
                     // Find or create "shortcuts" folder, then check for duplicates before saving
                     findOrCreateShortcutsFolder()
                         .then((folderId) => {
