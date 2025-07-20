@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "URL Shortcuts",
+  "version": "1.0",
+  "description": "Create and use custom URL shortcuts in Chrome's address bar",
+  "permissions": [
+    "activeTab",
+    "bookmarks",
+    "storage",
+    "tabs",
+    "notifications",
+    "search"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "URL Shortcuts"
+  },
+  "omnibox": {
+    "keyword": "@"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "add-shortcut": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Add custom shortcut for current page"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

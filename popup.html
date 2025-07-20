@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background: #45a049;
+    }
+    .shortcuts-list {
+      margin-top: 15px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .shortcut-item {
+      padding: 5px;
+      margin: 3px 0;
+      background: #f5f5f5;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+    .shortcut-name {
+      font-weight: bold;
+      color: #333;
+    }
+    .shortcut-url {
+      color: #666;
+      word-break: break-all;
+    }
+    .delete-btn {
+      float: right;
+      background: #f44336;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      padding: 2px 6px;
+      cursor: pointer;
+      font-size: 10px;
+    }
+    #customShortcutInput {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    #addCustomBtn {
+      background: #2196F3;
+    }
+    #addCustomBtn:hover {
+      background: #1976D2;
+    }
+    .input-group {
+      display: none;
+      margin: 10px 0;
+    }
+    .input-group.active {
+      display: block;
+    }
+    #shortcutNameInput {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="shortcutNameInput" placeholder="Enter shortcut name">
+  <button id="customAddBtn" class="button">Add Shortcut</button>
+  
+  <div id="customInputGroup" class="input-group">
+    <input type="text" id="customShortcutInput" placeholder="Enter shortcut names (e.g., g, google, ggl)">
+    <button id="addCustomBtn" class="button">Add Custom Shortcut</button>
+    <button id="cancelCustomBtn" class="button" style="background: #666;">Cancel</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
