@@ -220,7 +220,7 @@ chrome.omnibox.onInputChanged.addListener((text, suggest) => {
 
                 // Always add default search as last option
                 suggestions.push({
-                    content: `search:${text}`,
+                    content: `${text}`,
                     description: `Search for "${text}"`
                 });
 
