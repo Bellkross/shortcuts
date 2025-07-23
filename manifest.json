@@ -6,9 +6,7 @@
   "permissions": [
     "activeTab",
     "bookmarks",
-    "storage",
     "tabs",
-    "notifications",
     "search"
   ],
   "action": {
